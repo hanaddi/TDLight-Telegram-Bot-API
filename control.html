@@ -1,0 +1,107 @@
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+<title> </title>
+<style type="text/css">
+body{
+	overflow-x: hidden;
+}
+button{
+	margin: 5px;
+}
+.b1{
+	margin:10px;
+	padding: 15px;
+}
+#curr{
+	width: 30px;
+}
+#note{
+	font-family: monospace;
+	width: 95%;
+	height: 450px;
+	overflow-y: scroll;
+}
+#note br{
+	border: solid 2px red;
+	margin: 10px auto;
+}
+
+</style>
+<script src="data.js?<?php echo(rand()); ?>"></script>
+<script>
+
+var curr=0;
+try{
+	curr = parseInt(window.localStorage.getItem('__press_slide__'));
+}catch(e){
+}
+
+window.addEventListener('storage', () => {
+	console.log("get");
+	curr = parseInt(window.localStorage.getItem('__press_slide__'));
+	set(curr);
+});
+
+var set = function(i){
+	window.localStorage.setItem('__press_slide__', i);
+	document.querySelector('#curr').innerText = i;
+	document.querySelector('#note').innerText = '';
+	let setNote = function(html){
+		let div = document.createElement('div');
+		html = html.trim();
+		div.innerHTML = html;
+		if(div.querySelector('.note')){
+			document.querySelector('#note').innerHTML = div.querySelector('.note').innerHTML;
+		}
+	};
+	getPage(slide[i].p, setNote);
+}
+
+var prev = function(){
+	if(curr>0){
+		set(--curr);
+	}
+}
+var next = function(){
+	if(curr<slide.length-1){
+		set(++curr);
+	}
+}
+
+onload = ()=>{
+	for(let i in slide){
+		let button = document.createElement('button');
+		button.innerText = i;
+		button.onclick = function(){
+			curr = parseInt(i);
+			set(i);
+		}
+		document.querySelector('#slides').appendChild(button);
+		document.querySelector('#curr').innerText = curr;
+		set(curr);
+	}
+
+}
+var getPage = function(url, callback=()=>{}){
+	var request;
+	if(window.XMLHttpRequest){
+		request=new XMLHttpRequest();
+	}else{
+		request=new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	request.onreadystatechange=function(){
+		if(request.readyState==4){
+			t=request.responseText;
+			callback(t);
+		}
+	};
+	request.open("GET",url );
+	request.send();
+};
+
+</script>
+<div id="slides">
+	<button disabled id="curr"></button>
+</div>
+<button class="b1" onclick="prev()">&lt;</button>
+<button class="b1" onclick="next()">&gt;</button>
+<div id="note"></div>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Layer_1"
+   data-name="Layer 1"
+   viewBox="0 0 1448.64 977.76001"
+   version="1.1"
+   sodipodi:docname="telegram.rest.logo.svg"
+   width="1448.64"
+   height="977.76001"
+   inkscape:version="1.0.1 (1.0.1+r73)">
+  <metadata
+     id="metadata15">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="724"
+     id="namedview13"
+     showgrid="false"
+     inkscape:zoom="0.15738636"
+     inkscape:cx="152.9839"
+     inkscape:cy="701.634"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.cls-1{fill:#08c;}.cls-2{fill:#fff;fill-rule:evenodd;}</style>
+  </defs>
+  <title
+     id="title6">Telegram.rest logo 2.ico fullscreen-02</title>
+  <path
+     id="Flipperd_Cloud"
+     data-name="Flipperd Cloud"
+     class="cls-2"
+     d="m 162.37,495.18 q -0.69,-9.15 -0.7,-18.49 c 0,-130 102,-235.46 227.75,-235.46 a 221.11,221.11 0 0 1 116.13,32.86 C 541.55,117.1 682.14,0 850.06,0 c 195.23,0 353.5,158.27 353.5,353.51 0,2.22 0,4.43 -0.08,6.64 140.21,30.78 245.16,155.71 245.16,305.17 0,172.56 -139.89,312.44 -312.44,312.44 h -0.65 L 239.93,975.2 v 0 H 238 C 106.54,975.2 0,864.9 0,728.83 0,620.14 68,527.9 162.37,495.18 Z" />
+  <path
+     class="cls-1"
+     d="m 896.55,293.4 -463.5,267.4 a 24,24 0 0 0 2.2,43.2 l 106.3,44.6 287.3,-253.2 c 5.5,-4.9 13.3,2.6 8.6,8.3 l -240.9,293.5 v 80.5 c 0,23.6 28.5,32.9 42.5,15.8 l 63.5,-77.3 124.6,52.2 a 24.07,24.07 0 0 0 33,-18.2 l 72,-432 c 3.4,-20.2 -18.3,-34.8 -35.6,-24.8 z"
+     id="path10" />
+</svg>

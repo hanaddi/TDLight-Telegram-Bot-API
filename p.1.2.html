@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="pagestyle.css">
+<div class="page" style="">
+	<div  class="slide  p_top_left" style="">
+		<div class="t_2">User Mode</div>
+		<div>
+			<ul>
+				<li>
+					Steps:
+					<ol>
+						<li>
+							Send Login Request
+							<br/><strong><code>/userLogin</code></strong>
+						</li>
+						<li>
+							Send Authentication Code
+							<br/><strong><code>/user{token}/authCode</code></strong><br/>&nbsp;
+						</li>
+					</ol>
+				</li>
+
+				<li>
+					Official API (bot):
+					<br/><strong class="red"><code>api.telegram.org/bot{token}/...</code></strong>
+				</li>
+
+				<li>
+					TDLight API (userbot):
+					<br/><strong class="green"><code>telegram.rest/user{token}/...</code></strong>
+					<br/><strong class="green"><code>localhost:XXXX/user{token}/...</code></strong><br/>&nbsp;
+				</li>
+
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="note">
+We only need to authenticate once, the account will stay logged in. We can use the logOut method to log out or simply close the session in our account settings.
+</div>
